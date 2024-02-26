@@ -46,6 +46,8 @@ Following plots show the reconstructions with respect to **First perspective**.
 
 ## Activation Function Distribution
 In following I plot and compare the distribution of output over layers for random inputs, with weight initialization of MLP same as that of the paper.
+
+I can make deductions as follows. Triangular wave activation function leads to relatively sparse outputs, and would be better at fitting gradients and laplacians, as compared to original image. On the other hand, square wave seems to roughly have similar distribution as that of sine. But the fact that square wave clearly underperforms possibly illuminates on fact that degeneracy in weight distribution (where the outputs are expected to be dense) leads to inferior performance.
 ![Slide1](https://github.com/antidianuj/siren_exps/assets/47445756/ebf79cc5-f8c1-44bd-b126-2cc9dc436d86)
 
 
