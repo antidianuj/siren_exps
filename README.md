@@ -12,7 +12,7 @@ In this work, I perform following tasks:
 
 
 # Code
-Assuming the pytorch, opencv, scipy and matplotlib are installed in an environemtn with python>=3.9, the attributes of this work (1-4) are implemented and reproduced by
+Assuming the pytorch, opencv, scipy and matplotlib are installed in an environment with python>=3.9, the attributes of this work (1-4) are implemented and reproduced by
 ```bash
 python main.py --n_epochs 100 --learning_rate 1e-4 --hidden_features 256 --hidden_layers 2 --img_path \path\to\image.png --n_modes 4
 
