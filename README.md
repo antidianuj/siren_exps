@@ -44,6 +44,14 @@ Following plots show the reconstructions with respect to **First perspective**.
 ![Model_siren_variant2](https://github.com/antidianuj/siren_exps/assets/47445756/3d7f8bdd-12f7-4ea0-98ef-2788207e20f5)
 
 
+## Activation Function Distribution
+In following I plot and compare the distribution of output over layers for random inputs, with weight initialization of MLP same as that of the paper.
+![Slide1](https://github.com/antidianuj/siren_exps/assets/47445756/ebf79cc5-f8c1-44bd-b126-2cc9dc436d86)
+
+
+
+
+
 
 
 
