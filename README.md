@@ -6,7 +6,7 @@ In this work, I perform following tasks:
 1. While comparing sinusoidal and ReLU activation functions, I also consider Fourier approximants of square and triangle waves as activation functions.
 2. I am focussing on 2D reconstruction, where the task of the model is to map coordinates to pixel values.
 3. For training purpose, the key idea is to approximate discrete operators like Sobel and Laplacian with partial derviative (achievable via autograd). Essentially $\Delta{I}=\frac{\partial I'}{\partial x}$ and $\Delta^2{I}=\frac{\partial^2 I'}{\partial x^2}$ are assumed. Here $I$ is the origin image and $I'$ is the reconstructed image.
-4. Compare the reconstruction from two perspectives. First perspective is to change the activation functions among ReLU, Sine, Triangular and Square wave. Second perspective is the minimization loss by minimizing (essentiall) $||I-I'||_2$, $||\Delta{I}-\frac{\partial I'}{\partial x}||_2$, $||\Delta^2{I}-\frac{\partial^2 I'}{\partial x^2}||_2$ and combination all three.
+4. Compare the reconstruction from two perspectives. **First perspective** is to change the activation functions among ReLU, Sine, Triangular and Square wave. **Second perspective** is the minimization loss by minimizing (essentiall) $||I-I'||_2$, $||\Delta{I}-\frac{\partial I'}{\partial x}||_2$, $||\Delta^2{I}-\frac{\partial^2 I'}{\partial x^2}||_2$ and combination of all three.
 5. Plotting the layer output distribution over the sine, traingular and sqaure wave activation functions.
 
 
@@ -28,6 +28,9 @@ The (5) attribute is implemented in the jupyter notebooks.
 
 # Observations
 ## Image Reconstruction
+The columns represents reference images and reconstructed images with variations of change of loss functions (under **Second perspective**). The rows represent the original, gradiant and Laplacian of image in order.
+Following plots show the reconstructions with respect to **First perspective**.
+
 ### MLP-RELU
 ![Model_mlp_relu](https://github.com/antidianuj/siren_exps/assets/47445756/4b3b75f9-12b0-454a-81d6-1b76b03be4ad)
 
